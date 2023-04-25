@@ -132,7 +132,7 @@ export const ChatStream = async (
   // content: string,
 ) => {
   const prompt = messages.map((message) => message.content).join('\n');
-  let url = `http://123.57.144.51:48080/app-api/gpt/completions/stream?prompt=${prompt}&user=system`;
+  let url = `http://31.220.87.254:48080/app-api/gpt/completions/stream?prompt=${prompt}&user=system`;
   const res = await fetch(url, {
     headers: {
       'Content-Type': 'application/json',
